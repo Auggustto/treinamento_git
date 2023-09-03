@@ -325,60 +325,12 @@ Quando você puxa (pull) alterações de um repositório remoto, pode encontrar 
 git pull origin master
 ```
 
-## Resolvendo o erro de arquivos não rastreados
+### Recursos Adicionais
 
-`The following untracked working tree files would be overwitten by marge`
+<aside>
+🌐 [Documentação oficial do Git](https://git-scm.com/doc)
+[Resolvendo Conflitos](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
+[Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials)
 
-O erro indica que existem arquivos não rastreados no seu diretório de trabalho que seriam sobrescritos pela operação `git pull`. O Git está protegendo seus arquivos não rastreados para evitar que eles sejam perdidos.
-
-Etapas que você pode seguir para resolver esse problema:
-
-- **Commit ou descarte suas alterações não salvas:**
-
-    Se você tem alterações não salvas em seus arquivos e deseja salvá-las ou descartá-las antes de fazer o `git pull`:
-
-  - Para commitar as alterações:
-
-    ```
-    git commit -am "Minhas alterações"
-    ```
-
-    Para descartar as alterações:
-
-    ```
-    git stash save "Minhas alterações"
-    ```
-
-- **Verifique os arquivos não rastreados:**
-
-    Execute o comando `git status` para verificar quais são os arquivos não rastreados em seu diretório de trabalho:
-
-    ```
-    git status
-    ```
-
-    A saída do comando mostrará os arquivos não rastreados em vermelho.
-
-- **Decida o que fazer com esses arquivos:**
-  - Para commitar os arquivos não rastreados:
-
-        ```
-        git add .  # Adiciona todos os arquivos ao staging area
-        git commit -m "Commit das alterações não rastreadas"
-        ```
-
-  - Para descartar os arquivos não rastreados:
-
-        ```
-        git clean -f # Remove todos os arquivos não rastreados de forma forçada
-        ```
-
-    Para adicionar arquivos ao `.gitignore` (crie ou edite o arquivo `.gitignore` no diretório do seu repositório e liste os padrões de arquivos ou diretórios que você deseja ignorar, por exemplo, `.log` para ignorar todos os arquivos com a extensão .log).
-        
-- **Execute o `git pull` novamente:**
-
-    Após resolver as alterações não rastreadas, você pode tentar executar o `git pull` novamente:
-
-    ```
-    git pull
-    ```
+</aside>
+    
