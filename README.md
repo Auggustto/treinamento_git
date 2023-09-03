@@ -328,9 +328,12 @@ git pull origin master
 ### Recursos Adicionais
 
 <aside>
-🌐 [Documentação oficial do Git](https://git-scm.com/doc)
-[Resolvendo Conflitos](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
-[Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials)
+    
+![Documentação oficial do Git](https://git-scm.com/doc)
+
+![Resolvendo Conflitos](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
+
+![Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials)
 
 </aside>
     
